@@ -1,0 +1,80 @@
+.menu
+  position: relative
+  &-popup
+    height: 100vw
+    width: 400px
+    top: 65px
+    right: 0
+    bottom: 0
+    position: absolute
+    animation: menu
+    animation-duration: 0.7s
+    animation-fill-mode: forwards
+    background-color: #ffffff
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)
+    z-index: 1
+    border-bottom-left-radius: 15px
+
+    @keyframes menu
+      from
+        transform: translateX(300px)
+      to
+        text-transform: uppercase
+        transform: translateX(0px)
+    @media (max-width: 978px)
+      top: 57px
+      height: 100%
+      width: 100% !important
+
+.menu-popup-order
+  @extend .menu-popup
+  width: 25%
+  height: 100%
+  text-transform: capitalize
+
+h4
+  cursor: pointer
+
+.icon
+  padding: 5px
+  left: 0
+  position: absolute
+  display: flex
+  flex-direction: column
+
+
+.menu-inner
+  margin: 5px
+  h4
+    text-align: center
+.menu-form
+  display: flex
+  flex-direction: column
+
+.card
+  @media (max-width: 1024px)
+    justify-content: center
+
+.main-row
+  padding-top: 1px!important
+  padding-bottom: 0px!important
+  padding-left: 0px!important
+  min-width: 230px!important
+
+.b-mdi-plus
+  border-radius: 50%!important
+  background-color: #66a30d!important
+  align-items: center!important
+  display: flex!important
+  justify-content: center!important
+
+.add-txt
+  font-size: larger
+  text-transform: initial
+
+.h3-advertising
+  color: #000
+  text-transform: capitalize
+
+.mt-h3
+  color: #000

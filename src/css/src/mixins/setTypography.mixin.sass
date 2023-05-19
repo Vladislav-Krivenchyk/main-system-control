@@ -1,0 +1,11 @@
+$body-text-types: ("1": 18px, "2": 16px, "3": 14px, "4": 14px, "5": 12px, "6": 16px, "7": 18px, "8": 12px)
+$body-text-weights: ("1": 400, "2": 400, "3": 400, "4": 500, "5": 400, "6": 500, "7": 500, "8": 500)
+
+@mixin set-body-text($body-text-type : "1")
+  font-size: map-get($body-text-types, $body-text-type)
+  font-weight: map-get($body-text-weights, $body-text-type)
+  line-height: map-get($body-text-types, $body-text-type) * 1.5
+@mixin set-button-text
+  font-size: 12px
+  font-weight: 500
+  text-transform: uppercase
